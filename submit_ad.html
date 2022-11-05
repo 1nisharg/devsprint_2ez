@@ -31,7 +31,29 @@
      </head>
     </head>
     <body bgcolor="bisque">
-      
+      <script type="module">
+         // Import the functions you need from the SDKs you need
+         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+         // TODO: Add SDKs for Firebase products that you want to use
+         // https://firebase.google.com/docs/web/setup#available-libraries
+       
+         // Your web app's Firebase configuration
+         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+         const firebaseConfig = {
+           apiKey: "AIzaSyDbzO-2vwNMmBLUpV6MbdhWBCXoA3dEa3A",
+           authDomain: "marketplace-b6775.firebaseapp.com",
+           projectId: "marketplace-b6775",
+           storageBucket: "marketplace-b6775.appspot.com",
+           messagingSenderId: "747366269202",
+           appId: "1:747366269202:web:0a01eb8991887d8a94f3cb",
+           measurementId: "G-Z9ZFQNHWGL"
+         };
+       
+         // Initialize Firebase
+         const app = initializeApp(firebaseConfig);
+         const analytics = getAnalytics(app);
+       </script>      
     </body>
     </html>
     
