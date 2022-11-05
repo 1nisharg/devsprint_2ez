@@ -1,0 +1,163 @@
+﻿    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Upload Page</title>
+      <style>
+         #getData {
+             width: 250px;
+             height: 200px;
+             padding: 10px;
+             border: 1px solid #4f4d4d;
+         }
+         </style>
+         <script>
+         function allowDrop(even) {
+             even.preventDefault();
+         }
+      
+         function drag(even) {
+             even.dataTransfer.setData("text", even.target.id);
+         }
+      
+         function drop(even) {
+             even.preventDefault();
+             var fetchData = even.dataTransfer.getData("text");
+             even.target.appendChild(document.getElementById(fetchData));
+         }
+         </script>
+     </head>
+    </head>
+    <body bgcolor="bisque">
+      
+    </body>
+    </html>
+    
+    <div class="submit_ad">
+       <div class="submit_top"><h1>Upload your products</h1></div>
+        
+             <div class="f_container">
+                   <div class="group_container">
+                   
+                   <center> <div class="form_group">
+                       <label class="shop_label">Product Name</label>
+                       <input class="shop_textbox" name="" placeholder="Write your product name here" type="text" />
+                    </div>
+                    </center>
+                    <!-- <div class="form_group">
+                       <label class="shop_label">Category</label>
+                       <select class="shop_ddb" name=""></select>
+                    </div>  -->
+                   
+                   </div>
+                   
+                   <hr />
+                   
+                   <!-- From Here You Can Hide-->
+                   
+                   <center>
+                     <div class="group_container">
+                    <div class="form_group">
+                       <label class="shop_label">Price</label>
+                       <input class="shop_textbox" name="" placeholder="Write Here" type="text" />
+                    </div>
+                    
+                    <div class="form_group">
+                       <label class="shop_label">Year of buying </label>
+                       <input class="shop_textbox" name="" placeholder="Write Here" type="text" />
+                       
+                       
+                    </div>
+                    
+                   <!--- <div class="form_group">
+                       <label class="shop_label">Model Name</label>
+                       <input class="shop_textbox" name="" placeholder="Write Here" type="text" />
+                    </div> -->
+                    
+                    <!-- <div class="form_group">
+                       <label class="shop_label"></label>
+                       <select class="shop_ddb" name=""></select>
+                    </div> -->
+                    
+                    <div class="form_group">
+                       <label class="shop_label">Condition of the product</label>
+                       <select class="shop_ddb" name=""></select>
+                    </div>
+                   </div>
+                   
+                   <!--End Hide Area-->
+                   
+                   <hr />
+                   
+                    <div class="group_container">
+                     <div class="form_group">
+                       <label class="shop_label">Product Discription</label>
+                       <!-- <input class="shop_dis" name="" placeholder="write here" type="text" /> -->
+                       <textarea name="comment" placeholder="write here" form="usrform"></textarea>
+                    </div>
+                    </div>
+                    
+                    
+                     <hr />
+                   
+                    <div class="group_container">
+                     <div class="form_group">
+                       <label class="shop_label">Upload Pic</label>
+                         <div class="choose_file">
+                            <input name="Select File" id="blah" type="file" />
+                         </div>
+                         
+                         <div class="choose_file">
+                            <input name="Select File" type="file" />
+                         </div>
+                         
+                         <div class="choose_file">
+                            <input name="Select File" type="file" />
+                         </div>
+                         
+                         <input type="file" multiple name="files[]" />
+                    </div>
+                    </div>	
+
+                    <img id="dragData"
+                     src="gfg.png"
+                     draggable="true"
+                     ondragstart="drag(event)"
+                     width="250"
+                     height="200">
+                    
+                    
+                     <hr />
+                   <!--
+                    <div class="group_container">
+                     <div class="form_group">
+                       <label class="shop_label">Name</label>
+                       <input class="shop_textbox" name="" placeholder="Your Name" type="text" />
+                    </div>
+                    
+                    <div class="form_group">
+                       <label class="shop_label">Mobile No</label>
+                       <input class="shop_textbox" name="" placeholder="Mobile No" type="text" />
+                    </div>
+                    
+                    
+                    
+                    <div class="form_group">
+                        <input type="button" class="shop_bt" value="SUBMIT " />
+                    </div>
+                    
+                    </div>
+                   </div>
+                  -->
+                   </center>
+                    
+                   
+                   
+                  </div>
+                </div>
+   
+   
+   
+  
