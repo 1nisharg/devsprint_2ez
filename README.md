@@ -1,6 +1,6 @@
 # devsprint_2ez
 Team Members
-(1) Akshat Singh (Leader)
+(1) Akshat (Leader)
 Github ACCOUNT-->  
 (2) Dhruv Agarwal
 GITHUB ACCOUNT--> dhruvspeedcuber
