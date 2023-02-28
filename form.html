@@ -16,10 +16,10 @@
     <center>
     <form id="main">
       <h2>Product Name</h2>
-      <input type="text" id="name" placeholder="write your product name"> 
+      <input type="text" placeholder="write your product name"> 
       <hr>
       <h2>Model Name</h2>
-      <input type="text" id="model" placeholder="type model name here">
+      <input type="text" placeholder="type model name here" required>
       <hr>
       
 	   <div class="group_container">
@@ -29,27 +29,32 @@
 				</h2>
                          <div class="choose_file">
                             <input name="Select File" id="blah" type="file" multiple />
-                         </div><hr>	
-      <h2>Brief description of the product</h2>
-      <textarea id="desc" name="2eZ" rows="10" cols="50"></textarea>
+                         </div>	
+      <h2>Brief description of the prodduct</h2>
+      <textarea id="2ez" name="2eZ" rows="10" cols="50"></textarea>
+      <!-- <h1>No. of years used</h1>
+      <input type="radio" id="BLAH" name="product" value="huey"
+      checked>
+<label for="huey">0-2</label>
+</div>
+
+<div>
+<input type="radio" id="blah" name="drone" value="dewey">
+<label for="dewey">3-5</label>
+</div>
+
+<div>
+<input type="radio" id="lorem" name="drone" value="louie">
+<label for="louie">5-6</label>
+</div>
+<hr> -->
 <hr>
 <h2>Price</h2>
 <input type="text" id="price" placeholder="type your desired price here..">
 <br>
 <br>
-<button type="submit">Submit</button>
-</form>
-</center>
-  
-  
-  
-  
-                  
-<script type="module">
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
-</script>
-<script src="main.js"></script>
+<button type="submit" form="form1" value="Submit">Submit</button>
+    </form>
+    </center>
 </body>
 </html>
