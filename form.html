@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
-
+    
 </head>
 <body>
     
@@ -30,92 +30,26 @@
                          <div class="choose_file">
                             <input name="Select File" id="blah" type="file" multiple />
                          </div><hr>	
-      <h2>Brief description of the prodduct</h2>
+      <h2>Brief description of the product</h2>
       <textarea id="desc" name="2eZ" rows="10" cols="50"></textarea>
-      <!-- <h1>No. of years used</h1>
-      <input type="radio" id="BLAH" name="product" value="huey"
-      checked>
-<label for="huey">0-2</label>
-</div>
-
-<div>
-<input type="radio" id="blah" name="drone" value="dewey">
-<label for="dewey">3-5</label>
-</div>
-
-<div>
-<input type="radio" id="lorem" name="drone" value="louie">
-<label for="louie">5-6</label>
-</div>
-<hr> -->
 <hr>
 <h2>Price</h2>
 <input type="text" id="price" placeholder="type your desired price here..">
 <br>
 <br>
-<input type="submit" value="Submit" />
-    </form>
-    </center>
-<!-- external-->
+<button type="submit">Submit</button>
+</form>
+</center>
+  
+  
+  
+  
+                  
 <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyCvPzgcqsKdzvI__nqzWLVNVg7TAvjWgOU",
-      authDomain: "dbase-6a736.firebaseapp.com",
-      projectId: "dbase-6a736",
-      storageBucket: "dbase-6a736.appspot.com",
-      messagingSenderId: "163106930166",
-      appId: "1:163106930166:web:079b4a0190218d78175bd7",
-      measurementId: "G-0NBLJ2PG5G"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  
-    var messagesRef = firebase.database().ref('Collected Data');
-         
-        document.getElementById('form').addEventListener('submit', submitForm);
- 
-        function submitForm(e) {
-            e.preventDefault();
- 
-            // Get values
-            var name = getInputVal('name');
-            var model = getInputVal('model');
-            var desc = getInputVal("desc");
-            var price = getInputVal("price");
- 
-            saveMessage(name, model, desc, price);
-            document.getElementById('form').reset();
-        }
- 
-        // Function to get form values
-        function getInputVal(id) {
-            return document.getElementById(id).value;
-        }
- 
-        // Save message to firebase
-        function saveMessage(name, model, desc, price) {
-            var newMessageRef = messagesRef.push();
-            newMessageRef.set({
-                name: name,
-                model: model,
-                desc: desc,
-                price: price
-                        });
-  
-  
-  
-  
-                    }
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
 </script>
+<script src="main.js"></script>
 </body>
 </html>
